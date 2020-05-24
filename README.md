@@ -38,6 +38,6 @@
 端末で以下の手順を実行 <br>
 >sudo apt-get install git <br>
 
-## ROS2導入 ーWindows or Macー
+## ROS2導入 ーWindows or Macー (Option)
 ①公式_Windows　https://index.ros.org/doc/ros2/Installation/Dashing/Windows-Development-Setup/ <br>
 ②公式_Mac　https://index.ros.org/doc/ros2/Installation/Dashing/macOS-Install-Binary/ <br>
