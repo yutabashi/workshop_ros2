@@ -27,7 +27,7 @@ class MinimalPublisher(Node):
         msg = String()
 
         ## String.msgのdata変数に値を代入
-        msg.data = 'Hello World: %d' % self.i
+        msg.data = str(self.i)
 
         ## トピックを送信
         self.publisher_.publish(msg)
