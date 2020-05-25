@@ -26,6 +26,7 @@ find_package(rosidl_default_generators REQUIRED)
 set(msg_files
   "msg/TwoInts.msg"
   "msg/CoordinateXY.msg"
+  "msg/Distance.msg"
 )
 set(srv_files
   "srv/CalcTwoFloats.srv"

@@ -28,7 +28,7 @@ class Hoge(Node):
         self.get_logger().info('Publish XY: ({}, {})'.format(self.msg.x, self.msg.y))
 
     def _calc_distance(self, req, res):
-        res.distance = math.sqrt(float(req.x) ** 2 + float(req.y) ** 2)
+        res.distance = math.sqrt(req.x ** 2 + req.y ** 2)
 
         self.get_logger().info('distance: %f' % res.distance)
         return res
