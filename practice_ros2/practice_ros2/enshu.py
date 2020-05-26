@@ -13,16 +13,17 @@ import rclpy
 from rclpy.node import Node
 
 from std_msgs.msg import String
-from my_messages..msg import CoordinateXY, Distance
+from my_messages.msg import CoordinateXY, Distance
 
 
 class Enshu(Node):
     def __init__(self):
         super().__init__('enshu')
+        pass
 
-        self.sub = ***
-        self.sub = ***
-        self.pub = ***
+        #self.sub = ***
+        #self.sub = ***
+        #self.pub = ***
 
     def _topic_callback(self, msg):
         pass
