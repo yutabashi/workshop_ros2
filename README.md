@@ -58,7 +58,8 @@
 ビルド <br>
 >colcon build <br>
 
-<br>
+
+
 ### パッケージの作成
 指定なし <br>
 >ros2 pkg create <package_name> <br>
@@ -69,7 +70,8 @@ Pythonファイル作成 <br>
 C++ファイル作成 <br>
 >ros2 pkg create --build-type ament_cmake <package_name> <br>
   
-<br>
+
+
 ### 「colcon build」コマンド
 すべてのパッケージをビルド <br>
 >colcon build <br>
@@ -77,7 +79,7 @@ C++ファイル作成 <br>
 特定のパッケージをビルド <br>
 >colcon build --package-select <pakcage_name> <br>
 
-<br>
+
 ### 「node」コマンド
 起動中のNodeを確認する <br>
 >ros2 node list <br>
@@ -93,7 +95,8 @@ C++ファイル作成 <br>
 メッセージ型の内容を確認 <br>
 >ros2 msg show <msg_path/msg_name> <br>
   
-<br>
+
+
 ### 「topic」コマンド
 Nodeが利用しているTopicを表示 <br>
 >ros2 topic list <br>
@@ -101,7 +104,7 @@ Nodeが利用しているTopicを表示 <br>
 Topic内容の表示 <br>
 >ros2 topic echo <Topic_name> <br>
   
-<br>
+
 ### 「srv」コマンド
 全サービスファイルの確認 <br>
 >ros2 srv list <br>
@@ -109,11 +112,12 @@ Topic内容の表示 <br>
 特定のパッケージ内のサービスファイル確認 <br>
 >ros2 srv pakcage <srv_path/srv_name> <br>
   
-<br>
+
 ### rqt_graphの起動
 >rqt_graph <br>
   
-<br>
+
+
 ### workshop_task
 #### step0
 ROS2のアクティベート <br>
