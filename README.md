@@ -47,14 +47,14 @@
 ### 準備
 ディレクトリ作成 <br>
 >mkdir -p ~/workshop_ws/src <br>
-<br>
+  
 もとのリポジトリと同じものを複製する <br>
 >cd ~/workshop_ws/src <br>
 >git clone https://github.com/yutabashi/workshop_ros2 <br>
-<br>
+  
 ビルドに使うcolconもインストール <br>
 >sudo apt install python3-colcon-common-extensions <br>
-<br>
+  
 ビルド <br>
 >colcon build <br>
 
