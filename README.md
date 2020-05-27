@@ -41,3 +41,90 @@
 ## ROS2導入 ーWindows or Macー (Option)
 ①公式_Windows　https://index.ros.org/doc/ros2/Installation/Dashing/Windows-Development-Setup/ <br>
 ②公式_Mac　https://index.ros.org/doc/ros2/Installation/Dashing/macOS-Install-Binary/ <br>
+
+## Workshop
+
+### 準備
+ディレクトリ作成 <br>
+>mkdir -p ~/workshop_ws/src <br>
+<br>
+もとのリポジトリと同じものを複製する <br>
+>cd ~/workshop_ws/src <br>
+>git clone https://github.com/yutabashi/workshop_ros2 <br>
+<br>
+ビルドに使うcolconもインストール <br>
+>sudo apt install python3-colcon-common-extensions <br>
+<br>
+ビルド <br>
+>colcon build <br>
+
+### パッケージの作成
+指定なし <br>
+>ros2 pkg create <package_name> <br>
+<br>
+Pythonファイル作成 <br>
+>ros2 pkg create --build-type ament_python <package_name> <br>
+<br>
+C++ファイル作成 <br>
+>ros2 pkg create --build-type ament_cmake <package_name> <br>
+
+### 「colcon build」コマンド
+すべてのパッケージをビルド <br>
+>colcon build 
+特定のパッケージをビルド <br>
+>colcon build --package-select <pakcage_name> <br>
+
+### 「node」コマンド
+起動中のNodeを確認する <br>
+>ros2 node list <br>
+
+### 「msg」コマンド
+全メッセージファイルの確認 <br>
+>ros2 msg list <br>
+<br>
+特定パッケージ内のmsg確認 <br>
+>ros2 msg pakcage <package_name> <br>
+<br>
+メッセージ型の内容を確認 <br>
+>ros2 msg show <msg_path/msg_name> <br>
+
+### 「topic」コマンド
+Nodeが利用しているTopicを表示 <br>
+>ros2 topic list <br>
+<br>
+Topic内容の表示 <br>
+>ros2 topic echo <Topic_name> <br>
+
+### 「srv」コマンド
+全サービスファイルの確認 <br>
+>ros2 srv list <br>
+<br>
+特定のパッケージ内のサービスファイル確認 <br>
+>ros2 srv pakcage <srv_path/srv_name> <br>
+
+### rqt_graphの起動
+>rqt_graph <br>
+
+### workshop_task
+#### step0
+ROS2のアクティベート <br>
+>source /opt/ros/dashing/setup.bash <br>
+<br>
+自分で作成したROS2パッケージのアクティベート <br>
+>source ~/workshop_ws/install/local_setup.bash <br>
+
+#### step1
+>ros2 run python_pubsub nakanishi_ros2 <br>
+>ros2 run python_pubsub itabashi_ros2 <br>
+
+#### step2
+>ros2 run cpp_pubsub talker <br>
+>ros2 run python_pubsub itabashi_ros2 <br>
+
+#### step3
+>ros2 run py_srvcli client 1 2 <br>
+>ros2 run py_srvcli service  <br>
+
+#### step4
+>ros2 run practice_ros2 hoge <br>
+>ros2 run practice_ros2 hoge2 <br>
