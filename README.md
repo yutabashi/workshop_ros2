@@ -61,44 +61,45 @@
 ### パッケージの作成
 指定なし <br>
 >ros2 pkg create <package_name> <br>
-<br>
+  
 Pythonファイル作成 <br>
 >ros2 pkg create --build-type ament_python <package_name> <br>
-<br>
+  
 C++ファイル作成 <br>
 >ros2 pkg create --build-type ament_cmake <package_name> <br>
 
 ### 「colcon build」コマンド
 すべてのパッケージをビルド <br>
->colcon build 
+>colcon build <br>
+  
 特定のパッケージをビルド <br>
 >colcon build --package-select <pakcage_name> <br>
 
 ### 「node」コマンド
 起動中のNodeを確認する <br>
 >ros2 node list <br>
-
+  
 ### 「msg」コマンド
 全メッセージファイルの確認 <br>
 >ros2 msg list <br>
-<br>
+  
 特定パッケージ内のmsg確認 <br>
 >ros2 msg pakcage <package_name> <br>
-<br>
+  
 メッセージ型の内容を確認 <br>
 >ros2 msg show <msg_path/msg_name> <br>
 
 ### 「topic」コマンド
 Nodeが利用しているTopicを表示 <br>
 >ros2 topic list <br>
-<br>
+  
 Topic内容の表示 <br>
 >ros2 topic echo <Topic_name> <br>
 
 ### 「srv」コマンド
 全サービスファイルの確認 <br>
 >ros2 srv list <br>
-<br>
+  
 特定のパッケージ内のサービスファイル確認 <br>
 >ros2 srv pakcage <srv_path/srv_name> <br>
 
@@ -109,7 +110,7 @@ Topic内容の表示 <br>
 #### step0
 ROS2のアクティベート <br>
 >source /opt/ros/dashing/setup.bash <br>
-<br>
+  
 自分で作成したROS2パッケージのアクティベート <br>
 >source ~/workshop_ws/install/local_setup.bash <br>
 
