@@ -28,7 +28,12 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 sudo apt update
 sudo apt install ros-foxy-desktop
 ```
-
+毎回パスを通すのはめんどくさいので...
+```
+echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+これをやっておくと、以降「source /opt/ros/foxy/setup.bash」を省略できます
 
 >sudo locale-gen en_US en_US.UTF-8 <br>
 >sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 <br>
@@ -70,8 +75,8 @@ ros2 run demo_nodes_py listener
 
 それぞれの端末で <br>
 ```
-[INFO] [talker]: Publishing: 'Hello World: #1' <br>
-[INFO] [listener]: I heard: [Hello World: #1 <br>
+[INFO] [talker]: Publishing: 'Hello World: #1'
+[INFO] [listener]: I heard: [Hello World: #1]
 ```
 みたいな感じで表示されてればたぶん大丈夫です！ <br>
 
