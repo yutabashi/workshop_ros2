@@ -36,20 +36,6 @@ source ~/.bashrc
 ```
 これをやっておくと、以降「source /opt/ros/foxy/setup.bash」を省略できます
 
->sudo locale-gen en_US en_US.UTF-8 <br>
->sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 <br>
->export LANG=en_US.UTF-8 <br>
->sudo apt-get update && sudo apt-get install curl gnupg2 lsb-release <br>
->curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add - <br>
->sudo sh -c 'echo "deb http://packages.ros.org/ros2/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/ros2-latest.list' <br>
->sudo apt-get update <br>
->sudo apt-get install ros-dashing-desktop <br>
->sudo apt install python3-argcomplete <br>
->source /opt/ros/dashing/setup.bash <br>
->echo "source /opt/ros/dashing/setup.bash" >> ~/.bashrc <br>
->source ~/.bashrc <br>
->sudo apt install python3-colcon-common-extensions
-
 <br>
 導入はおすすめしませんが、WindowsやMacの人は下のURLから <br>
 https://docs.ros.org/en/foxy/Installation.html <br>
