@@ -27,6 +27,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 
 sudo apt update
 sudo apt install ros-foxy-desktop
+sudo apt install python3-colcon-common-extensions
 ```
 毎回パスを通すのはめんどくさいので...
 ```
