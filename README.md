@@ -26,10 +26,10 @@
 
 ### 導入の確認
 端末を2つ開き, それそれで以下を実行 <br>
->source /opt/ros/foxy/setup.bash
+>source /opt/ros/foxy/setup.bash <br>
 >ros2 run demo_nodes_cpp talker <br>
 
->source /opt/ros/foxy/setup.bash
+>source /opt/ros/foxy/setup.bash <br>
 >ros2 run demo_nodes_py listener <br>
 <br>
 それぞれの端末で <br>
