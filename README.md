@@ -66,13 +66,6 @@ ros2 run demo_nodes_cpp talker
 source /opt/ros/foxy/setup.bash
 ros2 run demo_nodes_py listener
 ```
-
->source /opt/ros/foxy/setup.bash <br>
->ros2 run demo_nodes_cpp talker <br>
-
->source /opt/ros/foxy/setup.bash <br>
->ros2 run demo_nodes_py listener <br>
-
 それぞれの端末で <br>
 ```
 [INFO] [talker]: Publishing: 'Hello World: #1'
@@ -82,7 +75,9 @@ ros2 run demo_nodes_py listener
 
 ## Git 導入
 端末で以下の手順を実行 <br>
->sudo apt install git <br>
+```
+sudo apt install git
+```
 
 ## ROS2導入 ーWindows or Macー (Option)
 ①公式_Windows　https://index.ros.org/doc/ros2/Installation/Dashing/Windows-Development-Setup/ <br>
