@@ -8,7 +8,7 @@
 その他, WSLなどお好みで！ <br>
 
 ## Ubuntu 20.04にROS2(ros2-dashing) 導入
-ー参照 : https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html <br>
+ー参照先 : https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html <br>
 端末で以下の手順を実行 <br>
 >sudo locale-gen en_US en_US.UTF-8 <br>
 >sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 <br>
@@ -24,17 +24,21 @@
 >source ~/.bashrc <br>
 >sudo apt install python3-colcon-common-extensions
 
+<br>
+導入はおすすめしませんが、WindowsやMacの人は下のURLから <br>
+https://docs.ros.org/en/foxy/Installation.html <br>
+<br>
+Ubuntuが18.04の人はDashingを入れるのがおすすめです <br>
+https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html <br>
+<br>
+
 ### 導入の確認
 端末を2つ開き, それそれで以下を実行 <br>
-'''
 >source /opt/ros/foxy/setup.bash <br>
 >ros2 run demo_nodes_cpp talker <br>
-'''
 
-'''
 >source /opt/ros/foxy/setup.bash <br>
 >ros2 run demo_nodes_py listener <br>
-'''
 <br>
 それぞれの端末で <br>
 [INFO] [talker]: Publishing: 'Hello World: #1' <br>
