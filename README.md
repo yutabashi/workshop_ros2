@@ -10,7 +10,7 @@
 ## Ubuntu 20.04にROS2(ros2-dashing) 導入
 ー参照先 : https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html <br>
 端末で以下の手順を実行 <br>
-'''
+```
 locale  # check for UTF-8
 
 sudo apt update && sudo apt install locales
@@ -19,7 +19,7 @@ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 locale  # verify settings
-'''
+```
 
 
 >sudo locale-gen en_US en_US.UTF-8 <br>
