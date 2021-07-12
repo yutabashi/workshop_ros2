@@ -39,7 +39,7 @@ https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html <br>
 
 >source /opt/ros/foxy/setup.bash <br>
 >ros2 run demo_nodes_py listener <br>
-<br>
+
 それぞれの端末で <br>
 [INFO] [talker]: Publishing: 'Hello World: #1' <br>
 [INFO] [listener]: I heard: [Hello World: #1 <br>
