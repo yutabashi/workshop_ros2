@@ -54,6 +54,14 @@ https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html <br>
 
 ### 導入の確認
 端末を2つ開き, それそれで以下を実行 <br>
+```
+source /opt/ros/foxy/setup.bash
+ros2 run demo_nodes_cpp talker
+
+source /opt/ros/foxy/setup.bash
+ros2 run demo_nodes_py listener
+```
+
 >source /opt/ros/foxy/setup.bash <br>
 >ros2 run demo_nodes_cpp talker <br>
 
@@ -61,8 +69,10 @@ https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html <br>
 >ros2 run demo_nodes_py listener <br>
 
 それぞれの端末で <br>
+```
 [INFO] [talker]: Publishing: 'Hello World: #1' <br>
 [INFO] [listener]: I heard: [Hello World: #1 <br>
+```
 みたいな感じで表示されてればたぶん大丈夫です！ <br>
 
 ## Git 導入
