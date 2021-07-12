@@ -28,13 +28,13 @@
 端末を2つ開き, それそれで以下を実行 <br>
 >source /opt/ros/foxy/setup.bash
 >ros2 run demo_nodes_cpp talker <br>
-<br>
+
 >source /opt/ros/foxy/setup.bash
 >ros2 run demo_nodes_py listener <br>
 <br>
 それぞれの端末で <br>
 [INFO] [talker]: Publishing: 'Hello World: #1' <br>
-[INFO] [listener]: I heard: [Hello World: #] <br>
+[INFO] [listener]: I heard: [Hello World: #1 <br>
 みたいな感じで表示されてればたぶん大丈夫です！ <br>
 
 ## Git 導入
