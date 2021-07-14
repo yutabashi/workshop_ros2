@@ -78,10 +78,16 @@ sudo apt install git
   
 もとのリポジトリと同じものを複製する <br>
 >cd ~/workshop_ws/src <br>
->git clone https://github.com/yutabashi/workshop_ros2 <br>
+foxyの場合 <br>
+>git clone -b foxy https://github.com/yutabashi/workshop_ros2 <br>
+dashingの場合 <br>
+>git clone -b dashing https://github.com/yutabashi/workshop_ros2 <br>
   
 ビルドに使うcolconもインストール <br>
 >sudo apt install python3-colcon-common-extensions <br>
+  
+その他のパッケージをインストール <br>
+>pip3 install catkin_pkg empy lark_parser <br>
   
 ビルド <br>
 >colcon build <br>
@@ -106,14 +112,26 @@ C++ファイル作成 <br>
   
 特定のパッケージをビルド <br>
 >colcon build --package-select <pakcage_name> <br>
-
+  
+可能なら、ファイルコピーの代わりにシンボリックを使用してインストール <br>
+>colcon build --symlink-install
+  
 
 ### 「node」コマンド
 起動中のNodeを確認する <br>
 >ros2 node list <br>
   
+### 「interface」コマンド  foxyのみ
+全メッセージファイルの確認 <br>
+>ros2 msg list <br>
+  
+特定パッケージ内のmsg確認 <br>
+>ros2 msg pakcage <package_name> <br>
+  
+メッセージ型の内容を確認 <br>
+>ros2 msg show <msg_path/msg_name> <br>
 
-### 「msg」コマンド
+### 「msg」コマンド  dashingのみ
 全メッセージファイルの確認 <br>
 >ros2 msg list <br>
   
@@ -168,3 +186,8 @@ ROS2のアクティベート <br>
 #### step4
 >ros2 run practice_ros2 hoge <br>
 >ros2 run practice_ros2 hoge2 <br>
+
+#### enshu
+>ros2 run practice_ros2 hoge <br>
+>ros2 run python_pubsub nakanishi_ros2 <br>
+>ros2 run practice_ros2 enshu <br>
