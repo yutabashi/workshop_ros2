@@ -9,6 +9,7 @@ setup(
     py_modules = [
         'practice_ros2.hoge',
         'practice_ros2.hoge2',
+        'practice_ros2.enshu',
     ],
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -24,6 +25,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'enshu = practice_ros2.enshu:main',
             'hoge = practice_ros2.hoge:main',
             'hoge2 = practice_ros2.hoge2:main',
         ],

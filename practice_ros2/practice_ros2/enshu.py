@@ -1,9 +1,11 @@
 '''
 ノード"nakanishi_ros2"からのトピックである"topic", ノード"hoge"からのトピックである"hoge"を受け取り,
-原点から3点までのユークリッド距離を求めた後, この距離情報をトピック名'enshu'としてpublishしてください
-
-編集するファイル→このファイル, practice_ros2/setup.py, my_messages/CmakeLists.txt
-                 my_messages/msgにDistance.msgファイル作成, 
+3つの値を座標と仮定し原点から3点までのユークリッド距離を求めた後, この距離情報をトピック名'enshu'としてpublishしてください
+独自メッセージを作成する場合
+編集するファイル→このファイル
+　　　　　　　　　my_messages/CmakeLists.txt, my_messages/msgにDistance.msgファイル作成, 
+std_msg.msg の Float64などを使用する場合
+編集するファイル→このファイル
 '''
 
 
