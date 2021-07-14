@@ -123,13 +123,13 @@ C++ファイル作成 <br>
   
 ### 「interface」コマンド  foxyのみ
 全メッセージファイルの確認 <br>
->ros2 msg list <br>
+>ros2 interface list <br>
   
 特定パッケージ内のmsg確認 <br>
->ros2 msg pakcage <package_name> <br>
+>ros2 interface pakcage <package_name> <br>
   
 メッセージ型の内容を確認 <br>
->ros2 msg show <msg_path/msg_name> <br>
+>ros2 interface show <msg_path/msg_name> <br>
 
 ### 「msg」コマンド  dashingのみ
 全メッセージファイルの確認 <br>
@@ -151,7 +151,7 @@ Topic内容の表示 <br>
 >ros2 topic echo <Topic_name> <br>
   
 
-### 「srv」コマンド
+### 「srv」コマンド dashingのみ
 全サービスファイルの確認 <br>
 >ros2 srv list <br>
   
